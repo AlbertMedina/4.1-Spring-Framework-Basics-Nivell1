@@ -2,9 +2,6 @@ package cat.itacademy.s04.t01.userapi.models;
 
 import java.util.UUID;
 
-public class User {
+public record User(UUID id, String name, String email) {
 
-    private UUID id;
-    private String name;
-    private String email;
 }
