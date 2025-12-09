@@ -25,8 +25,8 @@ Refactoring the application into a layered architecture with Controller, Service
 - Java IDE
 
 ## Installation
-1. Clone repository (https://github.com/AlbertMedina/4.1-Spring-Framework-Basics-Nivell1.git).
-`git clone https://github.com/AlbertMedina/4.1-Spring-Framework-Basics-Nivell1.git`
+1. Clone repository (https://github.com/AlbertMedina/4.1-Spring-Framework-Basics-Nivell3.git).
+`git clone https://github.com/AlbertMedina/4.1-Spring-Framework-Basics-Nivell3.git`
 2. Import project to Java IDE.
 
 ## Execution
