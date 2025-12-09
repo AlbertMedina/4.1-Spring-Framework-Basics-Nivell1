@@ -32,4 +32,16 @@ public class InMemoryUserRepositoryTest {
 
         assertEquals(2, repository.searchByName("albert").size());
     }
+
+    @Test
+    void findAllAndExistsByEmail_shouldReturnMatchingUsers() {
+        InMemoryUserRepository repository = new InMemoryUserRepository();
+
+        repository.save(new User(UUID.randomUUID(), "ALBERT", "albert@example.com"));
+        repository.save(new User(UUID.randomUUID(), "albert123", "albert123@example.com"));
+        repository.save(new User(UUID.randomUUID(), "albert789", "albert789@example.com"));
+
+        assertEquals(3, repository.findAll().size());
+        assertTrue(repository.existsByEmail("albert@example.com"));
+    }
 }
